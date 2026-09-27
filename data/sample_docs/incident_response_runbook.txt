@@ -1,0 +1,53 @@
+INCIDENT RESPONSE RUNBOOK
+
+1. SEVERITY LEVELS
+- SEV1 (Critical): Complete service outage or data loss affecting all customers.
+  Response time: immediate, all-hands. Must be acknowledged within 5 minutes.
+- SEV2 (High): Major functionality degraded for a significant subset of customers.
+  Response time: acknowledge within 15 minutes, resolve within 4 hours.
+- SEV3 (Medium): Minor functionality issue with a workaround available.
+  Response time: acknowledge within 1 hour, resolve within 1 business day.
+- SEV4 (Low): Cosmetic or non-urgent issue. Response time: next sprint cycle.
+
+2. ON-CALL ESCALATION
+The primary on-call engineer is paged first via PagerDuty. If there is no
+acknowledgment within 5 minutes, the page automatically escalates to the secondary
+on-call engineer, then to the engineering manager after another 5 minutes. For SEV1
+incidents, the incident commander role must be assigned within 10 minutes of
+detection.
+
+3. INCIDENT COMMANDER RESPONSIBILITIES
+The incident commander coordinates the response, makes final calls on mitigation
+strategy, manages communication with stakeholders, and ensures a scribe is
+documenting the timeline. The incident commander does not personally debug the
+issue; that responsibility belongs to the assigned technical lead.
+
+4. COMMUNICATION PROTOCOL
+For SEV1 and SEV2 incidents, a status page update must be posted within 15 minutes
+of confirmation. Internal stakeholders are updated every 30 minutes via the
+#incidents Slack channel. Customer-facing communication is drafted by the incident
+commander and approved by the on-call communications lead before posting.
+
+5. ROLLBACK PROCEDURE
+If a recent deployment is suspected as the root cause, the on-call engineer should
+initiate a rollback using the deployment pipeline's one-click revert. Rollbacks do
+not require additional approval during an active SEV1 or SEV2 incident but must be
+logged in the incident ticket immediately afterward.
+
+6. POST-INCIDENT REVIEW
+A blameless post-incident review must be scheduled within 5 business days of
+resolution for all SEV1 and SEV2 incidents. The review document includes a timeline,
+root cause analysis using the five-whys method, contributing factors, and at least
+three concrete action items with owners and due dates.
+
+7. DATA LOSS INCIDENTS
+Any incident involving potential data loss or corruption must involve the database
+reliability team immediately, regardless of severity classification. Backups are
+retained with point-in-time recovery for the last 35 days; recovery procedures are
+documented separately in the disaster recovery runbook.
+
+8. MONITORING AND ALERTING THRESHOLDS
+Alerts trigger when error rates exceed 1% over a 5-minute rolling window, p99 latency
+exceeds 2 seconds, or CPU utilization on any production node exceeds 85% for more
+than 10 minutes. Alert fatigue is reviewed monthly, and thresholds are tuned based on
+false positive rates.

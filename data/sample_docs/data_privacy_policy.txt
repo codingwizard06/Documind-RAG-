@@ -1,0 +1,61 @@
+DATA PRIVACY AND SECURITY POLICY
+
+1. PURPOSE
+This policy establishes the standards for the collection, processing, storage, and
+protection of personal data handled by the company. It applies to all employees,
+contractors, and third-party vendors who process personal data on behalf of the company.
+
+2. SCOPE OF PERSONAL DATA
+Personal data includes any information relating to an identified or identifiable
+natural person, including but not limited to: names, email addresses, phone numbers,
+IP addresses, government identification numbers, financial account details, and
+biometric data. Special category data (health records, religious beliefs, political
+opinions) requires enhanced protection measures as described in Section 6.
+
+3. DATA COLLECTION PRINCIPLES
+Data must be collected lawfully, fairly, and transparently. The company will only
+collect data that is adequate, relevant, and limited to what is necessary for the
+stated purpose (data minimization). Consent must be obtained before collecting any
+non-essential personal data, and users must be able to withdraw consent at any time
+through their account settings.
+
+4. DATA RETENTION
+Personal data will not be kept longer than necessary for the purposes for which it
+was collected. Standard retention periods are as follows:
+- Customer account data: retained for the duration of the active account plus 90 days
+  after account closure.
+- Transaction records: retained for 7 years to comply with financial regulations.
+- Marketing consent records: retained for 3 years from the date of last engagement.
+- Support tickets and communications: retained for 2 years.
+
+5. DATA SECURITY MEASURES
+All personal data must be encrypted at rest using AES-256 and in transit using TLS 1.2
+or higher. Access to production databases containing personal data is restricted to
+authorized personnel and requires multi-factor authentication. All access is logged
+and reviewed quarterly. Any suspected data breach must be reported to the security
+team within 4 hours of discovery.
+
+6. SPECIAL CATEGORY DATA
+Special category data requires explicit consent, additional encryption layers, and
+access restricted to a named list of authorized roles. Special category data may
+never be used for automated decision-making without human review.
+
+7. DATA SUBJECT RIGHTS
+Individuals have the right to access, correct, delete, or port their personal data.
+Requests must be fulfilled within 30 days. Individuals also have the right to object
+to processing based on legitimate interest and to lodge a complaint with a supervisory
+authority.
+
+8. THIRD-PARTY DATA SHARING
+Personal data may only be shared with third parties under a signed Data Processing
+Agreement (DPA) that ensures equivalent levels of protection. Cross-border transfers
+require Standard Contractual Clauses or an equivalent legal mechanism.
+
+9. BREACH NOTIFICATION
+In the event of a data breach affecting personal data, the company will notify
+affected individuals and relevant supervisory authorities within 72 hours of becoming
+aware of the breach, where required by applicable law.
+
+10. POLICY REVIEW
+This policy is reviewed annually by the Data Protection Officer and updated as
+necessary to reflect changes in law, technology, or business practices.

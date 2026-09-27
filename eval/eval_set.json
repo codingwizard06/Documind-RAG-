@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How long are transaction records retained for?",
+    "expected_source": "data_privacy_policy.txt"
+  },
+  {
+    "question": "What encryption standard is required for data at rest?",
+    "expected_source": "data_privacy_policy.txt"
+  },
+  {
+    "question": "How many days does the company have to notify individuals after a data breach?",
+    "expected_source": "data_privacy_policy.txt"
+  },
+  {
+    "question": "How many weeks of paid leave do secondary caregivers get?",
+    "expected_source": "employee_handbook.txt"
+  },
+  {
+    "question": "How many sick days are employees entitled to per year?",
+    "expected_source": "employee_handbook.txt"
+  },
+  {
+    "question": "What is the maximum number of remote work days per week without VP approval?",
+    "expected_source": "employee_handbook.txt"
+  },
+  {
+    "question": "How quickly must a SEV1 incident be acknowledged?",
+    "expected_source": "incident_response_runbook.txt"
+  },
+  {
+    "question": "How many days are backups retained for point-in-time recovery?",
+    "expected_source": "incident_response_runbook.txt"
+  },
+  {
+    "question": "What method is used for root cause analysis in post-incident reviews?",
+    "expected_source": "incident_response_runbook.txt"
+  },
+  {
+    "question": "What error rate threshold triggers a monitoring alert?",
+    "expected_source": "incident_response_runbook.txt"
+  }
+]
